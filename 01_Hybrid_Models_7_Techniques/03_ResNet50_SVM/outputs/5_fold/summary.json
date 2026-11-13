@@ -1,0 +1,10 @@
+{
+  "model": "ResNet50 + SVM",
+  "mode": "5-fold",
+  "acc": 66.12,
+  "precision": 77.56,
+  "recall": 57.01,
+  "f1": 62.21,
+  "cv_val_acc_mean": 65.44,
+  "cv_val_acc_std": 1.9
+}

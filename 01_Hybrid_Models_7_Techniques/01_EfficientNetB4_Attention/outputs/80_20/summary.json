@@ -1,0 +1,10 @@
+{
+  "model": "EfficientNet-B4 + Attention",
+  "mode": "80:20",
+  "acc": 85.87,
+  "precision": 83.22,
+  "recall": 81.38,
+  "f1": 81.62,
+  "train_acc": 99.54,
+  "val_acc": 85.8
+}

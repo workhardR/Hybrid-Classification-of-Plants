@@ -1,0 +1,3 @@
+Stage,Train Acc %,Val Acc %,Gap %,Diagnosis,Correction,Test Acc %,Precision %,Recall %,F1 %
+Initial training,99.98,75.76,24.22,OVERFITTING,-,-,-,-,-
+After correction / FINAL,99.98,75.76,24.22,OVERFITTING,"regularization (more dropout / weight-decay / smaller capacity) (rejected: validation got worse, kept initial model)",76.92,81.39,69.02,72.03

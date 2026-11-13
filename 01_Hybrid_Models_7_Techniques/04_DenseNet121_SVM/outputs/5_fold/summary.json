@@ -1,0 +1,10 @@
+{
+  "model": "DenseNet121 + SVM",
+  "mode": "5-fold",
+  "acc": 75.6,
+  "precision": 82.9,
+  "recall": 67.11,
+  "f1": 71.35,
+  "cv_val_acc_mean": 72.43,
+  "cv_val_acc_std": 0.91
+}

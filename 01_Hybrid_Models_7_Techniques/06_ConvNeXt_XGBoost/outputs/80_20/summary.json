@@ -1,0 +1,10 @@
+{
+  "model": "ConvNeXt + XGBoost",
+  "mode": "80:20",
+  "acc": 87.65,
+  "precision": 85.15,
+  "recall": 83.74,
+  "f1": 84.08,
+  "train_acc": 99.75,
+  "val_acc": 88.26
+}

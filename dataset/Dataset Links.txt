@@ -1,0 +1,8 @@
+1. A Deep Learning Model for Identification of Different Medicinal Plants and Usages (2026)
+https://www.kaggle.com/datasets?search=medicinal+plants
+
+2. Toxic Chinese Herbal Medicine Recognition in Real-World Images via Multi-Scale and Attention-Enhanced EfficientNetV2 (2026)
+https://www.kaggle.com/datasets?search=chinese+herbal+medicine
+
+3. A CNN and Transformer-Based Framework for Fine-Grained Plant Species Classification in Real-World Environments (2026)
+https://www.kaggle.com/datasets?search=plant+species+classification

@@ -1,0 +1,53 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Dataset files & Archives (download using dataset/Dataset Links.txt)
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+dataset/archive/
+dataset/dataset/
+@Dataset/
+dataset/*.jpg
+dataset/*.jpeg
+dataset/*.png

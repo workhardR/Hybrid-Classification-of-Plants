@@ -1,0 +1,10 @@
+{
+  "model": "DenseNet121 + XGBoost",
+  "mode": "5-fold",
+  "acc": 86.21,
+  "precision": 85.22,
+  "recall": 81.7,
+  "f1": 82.66,
+  "cv_val_acc_mean": 81.83,
+  "cv_val_acc_std": 0.71
+}

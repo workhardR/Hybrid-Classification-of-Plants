@@ -1,0 +1,2 @@
+Final TEST (ensemble of 5 fold models),Test Acc %,Precision %,Recall %,F1 %
+Swin Transformer + MLP,91.85,89.86,88.94,89.1

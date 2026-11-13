@@ -1,0 +1,10 @@
+{
+  "model": "Swin Transformer + MLP",
+  "mode": "5-fold",
+  "acc": 91.85,
+  "precision": 89.86,
+  "recall": 88.94,
+  "f1": 89.1,
+  "cv_val_acc_mean": 89.54,
+  "cv_val_acc_std": 0.52
+}

@@ -1,0 +1,10 @@
+{
+  "model": "ResNet50 + SVM",
+  "mode": "80:20",
+  "acc": 69.38,
+  "precision": 79.45,
+  "recall": 60.88,
+  "f1": 65.07,
+  "train_acc": 99.99,
+  "val_acc": 70.36
+}

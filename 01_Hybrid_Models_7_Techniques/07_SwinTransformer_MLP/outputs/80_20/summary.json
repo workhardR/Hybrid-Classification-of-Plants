@@ -1,0 +1,10 @@
+{
+  "model": "Swin Transformer + MLP",
+  "mode": "80:20",
+  "acc": 89.62,
+  "precision": 88.48,
+  "recall": 86.53,
+  "f1": 86.76,
+  "train_acc": 99.02,
+  "val_acc": 87.59
+}

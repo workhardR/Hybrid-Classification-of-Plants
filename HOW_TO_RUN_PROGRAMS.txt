@@ -1,0 +1,274 @@
+================================================================================
+  HOW TO START / EXECUTE EACH PROGRAM - COMMAND PROMPT (CMD) GUIDE
+================================================================================
+Project: Medical, Endangered, and Poisonous Plant Classification Using Hybrid Deep Learning
+Directory: C:\Users\ronit\Downloads\plant_hybrid_project
+================================================================================
+
+--------------------------------------------------------------------------------
+TABLE OF CONTENTS:
+--------------------------------------------------------------------------------
+  1. INITIAL COMMAND PROMPT SETUP (Virtual Environment)
+  2. WEB APPLICATION (Flask Browser UI)
+  3. COMPLETE 10-STEP MACHINE LEARNING PIPELINE
+  4. THE 7 HYBRID DEEP LEARNING MODELS (Training & Prediction)
+  5. BENCHMARK COMPARISON & EVALUATION SCRIPTS
+  6. VISUALIZATION, GRAPH & FIGURE GENERATION SCRIPTS
+  7. PROJECT REPORT & COLAB NOTEBOOK GENERATION
+  8. RUNNING SCRIPTS FROM THE "Codes" FOLDER
+--------------------------------------------------------------------------------
+
+
+================================================================================
+1. INITIAL COMMAND PROMPT SETUP (DO THIS FIRST)
+================================================================================
+Open Command Prompt (Press Win + R, type `cmd`, and press Enter).
+Always navigate to the project directory and activate the virtual environment:
+
+Command to navigate to project root:
+------------------------------------
+cd /d C:\Users\ronit\Downloads\plant_hybrid_project
+
+Command to activate the virtual environment:
+--------------------------------------------
+.venv\Scripts\activate
+
+(After running this, you should see "(.venv)" appear at the start of your command prompt line)
+
+(Optional) To install or verify all dependencies:
+-------------------------------------------------
+pip install -r requirements.txt
+
+
+================================================================================
+2. WEB APPLICATION (FLASK BROWSER INTERFACE)
+================================================================================
+Launches the interactive web application with:
+  - Image upload & real-time botanical classification
+  - CLAHE contrast enhancement preview
+  - Overfitting / Underfitting detection indicators
+  - Side-by-side 7 hybrid algorithm comparison
+
+Command to start:
+-----------------
+python app.py
+
+How to open in browser:
+-----------------------
+Once running, open your web browser (Chrome, Edge, etc.) and go to:
+http://127.0.0.1:5000
+
+To stop the web application:
+Press Ctrl + C in the Command Prompt window.
+
+
+================================================================================
+3. COMPLETE 10-STEP MACHINE LEARNING PIPELINE
+================================================================================
+The project implements a 10-step academic workflow for dataset loading,
+leakage checking, CLAHE enhancement, GAN augmentation, training, and evaluation.
+
+Option A: Run ALL 10 Steps Automatically in Sequence
+-----------------------------------------------------
+python run_all_pipeline_steps.py
+
+(Alternative command):
+python pipeline_steps\run_all_steps.py
+
+Option B: Run Steps Individually in Sequence
+--------------------------------------------
+Step 01 - Load Dataset & Directory Validation:
+python pipeline_steps\step01_load_dataset.py
+
+Step 02 - Data Preprocessing & Formatting:
+python pipeline_steps\step02_data_preprocessing.py
+
+Step 03 - Data Leakage Checks (Target, Duplicates, Suspicious Features):
+python pipeline_steps\step03_data_leakage_checks.py
+
+Step 04 - CLAHE Contrast-Limited Adaptive Histogram Equalization:
+python pipeline_steps\step04_clahe_enhancement.py
+
+Step 05 - Train / Val / Test Splits (80:20 and 5-Fold Stratified):
+python pipeline_steps\step05_train_val_test_splits.py
+
+Step 06 - GAN Augmentation on Training Data Only:
+python pipeline_steps\step06_gan_augmentation.py
+
+Step 07 - Initial Model Training:
+python pipeline_steps\step07_initial_model_training.py
+
+Step 08 - Overfitting / Underfitting Detection & Diagnostics:
+python pipeline_steps\step08_overfit_underfit_detection.py
+
+Step 09 - Apply Correction Techniques & Retraining:
+python pipeline_steps\step09_correction_and_retrain.py
+
+Step 10 - Final Test Evaluation & Metrics Export:
+python pipeline_steps\step10_final_test_evaluation.py
+
+
+================================================================================
+4. THE 7 HYBRID DEEP LEARNING MODELS (TRAINING & INFERENCE)
+================================================================================
+Each of the 7 hybrid architectures has two main scripts:
+  - `run.py`     : Trains and evaluates the model across 80:20 and 5-Fold splits
+  - `predict.py` : Interactive single-image prediction test
+
+--------------------------------------------------------------------------------
+Model 1: EfficientNet-B4 + Multi-Head Attention
+--------------------------------------------------------------------------------
+To Train & Evaluate:
+python plant_hybrid\01_EfficientNetB4_Attention\run.py
+
+To Run Interactive Image Prediction:
+python plant_hybrid\01_EfficientNetB4_Attention\predict.py
+
+--------------------------------------------------------------------------------
+Model 2: EfficientNet-B4 + XGBoost
+--------------------------------------------------------------------------------
+To Train & Evaluate:
+python plant_hybrid\02_EfficientNetB4_XGBoost\run.py
+
+To Run Interactive Image Prediction:
+python plant_hybrid\02_EfficientNetB4_XGBoost\predict.py
+
+--------------------------------------------------------------------------------
+Model 3: ResNet-50 + Support Vector Machine (SVM)
+--------------------------------------------------------------------------------
+To Train & Evaluate:
+python plant_hybrid\03_ResNet50_SVM\run.py
+
+To Run Interactive Image Prediction:
+python plant_hybrid\03_ResNet50_SVM\predict.py
+
+--------------------------------------------------------------------------------
+Model 4: DenseNet-121 + Support Vector Machine (SVM)
+--------------------------------------------------------------------------------
+To Train & Evaluate:
+python plant_hybrid\04_DenseNet121_SVM\run.py
+
+To Run Interactive Image Prediction:
+python plant_hybrid\04_DenseNet121_SVM\predict.py
+
+--------------------------------------------------------------------------------
+Model 5: DenseNet-121 + XGBoost
+--------------------------------------------------------------------------------
+To Train & Evaluate:
+python plant_hybrid\05_DenseNet121_XGBoost\run.py
+
+To Run Interactive Image Prediction:
+python plant_hybrid\05_DenseNet121_XGBoost\predict.py
+
+--------------------------------------------------------------------------------
+Model 6: ConvNeXt-Tiny + XGBoost
+--------------------------------------------------------------------------------
+To Train & Evaluate:
+python plant_hybrid\06_ConvNeXt_XGBoost\run.py
+
+To Run Interactive Image Prediction:
+python plant_hybrid\06_ConvNeXt_XGBoost\predict.py
+
+--------------------------------------------------------------------------------
+Model 7: Swin Transformer-Tiny + MLP (Baseline Benchmark)
+--------------------------------------------------------------------------------
+To Train & Evaluate:
+python plant_hybrid\07_SwinTransformer_MLP\run.py
+
+To Run Interactive Image Prediction:
+python plant_hybrid\07_SwinTransformer_MLP\predict.py
+
+
+================================================================================
+5. BENCHMARK COMPARISON & EVALUATION SCRIPTS
+================================================================================
+Compare all 7 models and print comparison tables:
+-------------------------------------------------
+python plant_hybrid\compare_all.py
+(Generates `comparison_all_models.csv` summarizing 80:20 & 5-fold test results)
+
+Generate complete multi-sheet Excel Evaluation Workbook:
+--------------------------------------------------------
+python generate_excel_evaluation_sheets.py
+(Generates `All_Models_Test_Evaluation_Data.xlsx` with per-class and domain metrics)
+
+
+================================================================================
+6. VISUALIZATION, GRAPH & FIGURE GENERATION SCRIPTS
+================================================================================
+Generate all 7 algorithm benchmark charts & comparison plots:
+-------------------------------------------------------------
+python plot_all_algorithm_outputs.py
+
+Generate unified 7-model learning curves grid:
+---------------------------------------------
+python generate_all_7_learning_curves.py
+
+Generate 7-model confusion matrix grid (Domain 3x3):
+---------------------------------------------------
+python generate_7_confusion_grid.py
+
+Generate visible high-contrast confusion matrices for all techniques:
+---------------------------------------------------------------------
+python generate_visible_confusion_matrices_all_techniques.py
+
+Generate representative botanical dataset sample image grids:
+-------------------------------------------------------------
+python generate_dataset_sample_grids.py
+
+Generate all report figures:
+----------------------------
+python generate_report_figures.py
+
+Fix / update remaining figure curves:
+-------------------------------------
+python fix_all_remaining_graphs.py
+python fix_all_xgboost_curves.py
+
+
+================================================================================
+7. PROJECT REPORT & COLAB NOTEBOOK GENERATION
+================================================================================
+Generate complete academic Word Report document (.docx):
+--------------------------------------------------------
+python build_full_report_docx.py
+(Creates `Project_Review_3_Plant_Classification_Report_Updated.docx`)
+
+Generate Project Review 3 formatted documentation:
+-------------------------------------------------
+python create_project_review_3_doc.py
+(Creates `Project_Review_3_Plant_Classification_Report.docx`)
+
+Build full standalone Google Colab Notebook (.ipynb):
+----------------------------------------------------
+python build_7_techniques_colab.py
+(Creates `Plant_Hybrid_7_Algorithms_Complete_Colab.ipynb`)
+
+
+================================================================================
+8. RUNNING SCRIPTS FROM THE "Codes" FOLDER
+================================================================================
+If you extracted or are working inside the clean `Codes\` directory:
+
+Navigate into Codes:
+cd /d C:\Users\ronit\Downloads\plant_hybrid_project\Codes
+
+1. Run any model training:
+   python 01_Hybrid_Models_7_Techniques\01_EfficientNetB4_Attention\run.py
+   python 01_Hybrid_Models_7_Techniques\02_EfficientNetB4_XGBoost\run.py
+   python 01_Hybrid_Models_7_Techniques\03_ResNet50_SVM\run.py
+   python 01_Hybrid_Models_7_Techniques\04_DenseNet121_SVM\run.py
+   python 01_Hybrid_Models_7_Techniques\05_DenseNet121_XGBoost\run.py
+   python 01_Hybrid_Models_7_Techniques\06_ConvNeXt_XGBoost\run.py
+   python 01_Hybrid_Models_7_Techniques\07_SwinTransformer_MLP\run.py
+
+2. Run the 10-step pipeline:
+   python 03_Pipeline_Steps_01_to_10\run_all_steps.py
+
+3. Run plotting / comparison from Codes:
+   python 05_Evaluation_and_Plotting_Scripts\compare_all.py
+   python 05_Evaluation_and_Plotting_Scripts\generate_7_confusion_grid.py
+   python 05_Evaluation_and_Plotting_Scripts\generate_all_7_learning_curves.py
+   python 05_Evaluation_and_Plotting_Scripts\plot_all_algorithm_outputs.py
+================================================================================
+

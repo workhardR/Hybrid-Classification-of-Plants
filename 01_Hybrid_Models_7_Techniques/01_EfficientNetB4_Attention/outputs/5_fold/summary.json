@@ -1,0 +1,10 @@
+{
+  "model": "EfficientNet-B4 + Attention",
+  "mode": "5-fold",
+  "acc": 88.14,
+  "precision": 85.99,
+  "recall": 83.34,
+  "f1": 83.94,
+  "cv_val_acc_mean": 86.29,
+  "cv_val_acc_std": 0.39
+}

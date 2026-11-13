@@ -1,0 +1,2 @@
+Final TEST (ensemble of 5 fold models),Test Acc %,Precision %,Recall %,F1 %
+ResNet50 + SVM,66.12,77.56,57.01,62.21

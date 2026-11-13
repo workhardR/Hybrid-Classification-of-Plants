@@ -1,0 +1,2 @@
+Final TEST (ensemble of 5 fold models),Test Acc %,Precision %,Recall %,F1 %
+ConvNeXt + XGBoost,90.64,88.56,86.96,87.27

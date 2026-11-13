@@ -1,0 +1,10 @@
+{
+  "model": "EfficientNet-B4 + XGBoost",
+  "mode": "80:20",
+  "acc": 79.23,
+  "precision": 77.16,
+  "recall": 74.09,
+  "f1": 74.93,
+  "train_acc": 100.0,
+  "val_acc": 77.75
+}

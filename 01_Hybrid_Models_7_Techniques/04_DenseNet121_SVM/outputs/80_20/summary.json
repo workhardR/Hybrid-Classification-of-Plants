@@ -1,0 +1,10 @@
+{
+  "model": "DenseNet121 + SVM",
+  "mode": "80:20",
+  "acc": 76.92,
+  "precision": 81.39,
+  "recall": 69.02,
+  "f1": 72.03,
+  "train_acc": 99.98,
+  "val_acc": 75.76
+}

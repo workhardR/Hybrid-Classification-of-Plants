@@ -1,0 +1,10 @@
+{
+  "model": "ConvNeXt + XGBoost",
+  "mode": "5-fold",
+  "acc": 90.64,
+  "precision": 88.56,
+  "recall": 86.96,
+  "f1": 87.27,
+  "cv_val_acc_mean": 88.16,
+  "cv_val_acc_std": 0.47
+}
